@@ -1,0 +1,16 @@
+AbstractTextEditor.Color.Background=0,0,0
+AbstractTextEditor.Color.Background.SystemDefault=false
+AbstractTextEditor.Color.FindScope=74,126,79
+AbstractTextEditor.Color.Foreground=255,255,255
+AbstractTextEditor.Color.Foreground.SystemDefault=false
+AbstractTextEditor.Color.SelectionBackground=77,66,2
+AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
+currentIPColor=67,91,40
+currentLineColor=46,46,46
+eclipse.preferences.version=1
+occurrenceIndicationColor=82,82,82
+overviewRuler_migration=migrated_3.1
+quickdiff.quickDiff=false
+searchResultIndicationColor=128,128,128
+secondaryIPColor=67,91,40
+spacesForTabs=true
