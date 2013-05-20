@@ -104,13 +104,13 @@
 	<key>WindowTitle</key>
 	<string>Terminal</string>
 	<key>columnCount</key>
-	<integer>160</integer>
+	<integer>102</integer>
 	<key>deleteSendsBackspace</key>
 	<integer>0</integer>
 	<key>name</key>
 	<string>Dylan’s settings</string>
 	<key>rowCount</key>
-	<integer>50</integer>
+	<integer>64</integer>
 	<key>shellExitAction</key>
 	<integer>0</integer>
 	<key>type</key>
