@@ -36,6 +36,9 @@ alias mvninstall="mvn clean install -DskipTests=true -Dmaven.javadoc.skip=true"
 # Sublime
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
+# Mongo
+alias md="./mongod --dbpath ../../data/db"
+
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 #export JAVA_HOME=/Library/Java/Home
