@@ -7,11 +7,6 @@ fi
 
 # User specific environment and startup programs
 
-#PATH=.:$HOME/bin:/usr/java/j2re1.4.2_04/bin:~/Applications/id3v2-0.1.11/bin:~/.gem/ruby/1.8/bin:$PATH
-
-#export PATH
-#unset USERNAME
-
 alias dir="ls -l"
 alias dira="ls -al"
 set -o vi
@@ -39,10 +34,16 @@ alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 # Mongo
 alias md="./mongod --dbpath ../../data/db"
 
-export CLICOLOR=1
-export LSCOLORS=ExFxCxDxBxegedabagacad
+# Java
 #export JAVA_HOME=/Library/Java/Home
 export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+
+# Python
+#export VIRTUAL_ENV_DISABLE_PROMPT=true
+#source ~/code/python/myEnv/bin/activate
+
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
 
 [[ -s "$HOME/.nvm/nvm.sh" ]] && . $HOME/.nvm/nvm.sh # This loads NVM
 
