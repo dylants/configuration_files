@@ -5,10 +5,10 @@
 	<key>BackgroundColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
-	AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NPEBMw
-	IDAgMCAwLjg5OTk5OTk3NjIAEAGAAtIQERITWiRjbGFzc25hbWVYJGNsYXNzZXNXTlND
-	b2xvcqISFFhOU09iamVjdF8QD05TS2V5ZWRBcmNoaXZlctEXGFRyb290gAEIERojLTI3
-	O0FITltieHp8gYyVnaCpu77DAAAAAAAAAQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAAMU=
+	AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NGMCAw
+	IDAAEAGAAtIQERITWiRjbGFzc25hbWVYJGNsYXNzZXNXTlNDb2xvcqISFFhOU09iamVj
+	dF8QD05TS2V5ZWRBcmNoaXZlctEXGFRyb290gAEIERojLTI3O0FITltiaWttcn2GjpGa
+	rK+0AAAAAAAAAQEAAAAAAAAAGQAAAAAAAAAAAAAAAAAAALY=
 	</data>
 	<key>Bell</key>
 	<string>NO</string>
@@ -104,13 +104,13 @@
 	<key>WindowTitle</key>
 	<string>Terminal</string>
 	<key>columnCount</key>
-	<integer>102</integer>
+	<integer>101</integer>
 	<key>deleteSendsBackspace</key>
 	<integer>0</integer>
 	<key>name</key>
 	<string>Dylan’s settings</string>
 	<key>rowCount</key>
-	<integer>64</integer>
+	<integer>63</integer>
 	<key>shellExitAction</key>
 	<integer>0</integer>
 	<key>type</key>
