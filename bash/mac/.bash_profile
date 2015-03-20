@@ -7,6 +7,10 @@ fi
 
 # User specific environment and startup programs
 
+# https://github.com/jimeh/git-aware-prompt
+export GITAWAREPROMPT=~/code/git/git-aware-prompt
+source $GITAWAREPROMPT/main.sh
+
 alias dir="ls -l"
 alias dira="ls -al"
 set -o vi
@@ -14,8 +18,10 @@ set -o vi
 #PS1='\[\e[1;32m\][\u@\h \W]\$\[\e[0m\] '
 #PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]'
 #PS1='\[\e[0;32m\]\u@\h \[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]'
-PS1='\[\e[0;32m\]\u@\h \[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[0;37m\]'
+#PS1='\[\e[0;32m\]\u@\h \[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[0;37m\]'
+PS1="\[$txtgrn\]\u@\h \[$bldblu\]\w \[$txtrst\]\[$txtgrn\]\$git_branch\[$txtred\]\$git_dirty\[$txtgrn\]\$ \[$txtrst\]"
 alias rm="rm -i"
+alias wget="curl -O"
 
 # Eclipse
 alias workspace="cd ~/code/springsource/workspace/sts-2.9.1"
@@ -33,6 +39,9 @@ alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # Mongo
 alias md="./mongod --dbpath ../../data/db"
+
+# Android Development Toolkit
+#export PATH=$PATH:~/code/adt-bundle/sdk/platform-tools:~/code/adt-bundle/sdk/tools
 
 # Java
 #export JAVA_HOME=/Library/Java/Home
