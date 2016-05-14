@@ -1,8 +1,16 @@
 # .bash_profile
 
+# For brew, include /usr/local/bin first
+export PATH=/usr/local/bin:$PATH
+
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
+fi
+
+# For bash completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
 fi
 
 # User specific environment and startup programs
@@ -38,7 +46,7 @@ alias mvninstall="mvn clean install -DskipTests=true -Dmaven.javadoc.skip=true"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # Mongo
-alias md="./mongod --dbpath ../../data/db"
+alias md="/Users/dylan/code/mongodb/mongodb-osx-x86_64-2.4.10/bin/mongod --dbpath /Users/dylan/code/mongodb/data/db"
 
 # Android Development Toolkit
 #export PATH=$PATH:~/code/adt-bundle/sdk/platform-tools:~/code/adt-bundle/sdk/tools
