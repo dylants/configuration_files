@@ -1,17 +1,15 @@
 # .bash_profile
 
-# For brew, include /usr/local/bin first
-export PATH=/usr/local/bin:$PATH
+# For brew, include it's bin first
+export PATH=~/code/homebrew/bin:$PATH
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
 
-# For bash completion
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
-fi
+# Silence Apple's annoying warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # User specific environment and startup programs
 
@@ -32,36 +30,49 @@ alias rm="rm -i"
 alias wget="curl -O"
 
 # Eclipse
-alias workspace="cd ~/code/springsource/workspace/sts-2.9.1"
+#alias workspace="cd ~/code/springsource/workspace/sts-2.9.1"
 
 # Git
 alias gitcode="cd ~/code/git"
-alias gitcolor="git config color.ui true"
+#alias gitcolor="git config color.ui true"
+
+# VS Code
+export PATH=$PATH:~/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
 
 # Maven
-alias mvnpackage="mvn clean package -DskipTests=true -Dmaven.javadoc.skip=true"
-alias mvninstall="mvn clean install -DskipTests=true -Dmaven.javadoc.skip=true"
+#alias mvnpackage="mvn clean package -DskipTests=true -Dmaven.javadoc.skip=true"
+#alias mvninstall="mvn clean install -DskipTests=true -Dmaven.javadoc.skip=true"
 
 # Sublime
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+#alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 # Mongo
-alias md="/Users/dylan/code/mongodb/mongodb-osx-x86_64-2.4.10/bin/mongod --dbpath /Users/dylan/code/mongodb/data/db"
+#alias md="/Users/dylan/code/mongodb/mongodb-osx-x86_64-2.4.10/bin/mongod --dbpath /Users/dylan/code/mongodb/data/db"
 
 # Android Development Toolkit
 #export PATH=$PATH:~/code/adt-bundle/sdk/platform-tools:~/code/adt-bundle/sdk/tools
 
 # Java
 #export JAVA_HOME=/Library/Java/Home
-export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+#export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 
 # Python
 #export VIRTUAL_ENV_DISABLE_PROMPT=true
 #source ~/code/python/myEnv/bin/activate
 
+# MySQL
+#export PATH="$PATH:/usr/local/opt/mysql@5.7/bin"
+
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-[[ -s "$HOME/.nvm/nvm.sh" ]] && . $HOME/.nvm/nvm.sh # This loads NVM
+[[ -r "$HOME/code/homebrew/etc/profile.d/bash_completion.sh" ]] && . "$HOME/code/homebrew/etc/profile.d/bash_completion.sh"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# git autocomplete
+source ~/.git-completion.bash
+
+[[ -s "$HOME/.nvm/nvm.sh" ]] && . $HOME/.nvm/nvm.sh # This loads NVM
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
